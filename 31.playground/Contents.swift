@@ -144,3 +144,4 @@ class MyClass {
 
 let myClass = MyClass(type: "test")
 let myClass2 = MyClass(type: "")
+
