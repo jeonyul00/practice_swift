@@ -43,7 +43,6 @@ class Player {
     }
 }
 
-
 let player1 = Player()
 let player2 = Player()
 let player3 = Player()
