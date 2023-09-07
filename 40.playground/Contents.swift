@@ -2,6 +2,8 @@ import UIKit
 
 // protocol2
 
+
+// mutating : 특정 메소드 내에서 구조체 또는 열거형의 프로퍼티를 수정해야 하는 경우, 해당 메소드의 동작을 변경하도록 하는 것
 protocol Togglabel {
     mutating func toggle()
 }
@@ -45,7 +47,6 @@ class VIPMember:SomeProtocol {
 var vip = VIPMember(age: 30)
 vip.age
 
-// ---------- 이게 무슨 말이지? : 다시 뜯어보기
 // Delegation : 위임한다?, 데이터를 넘겨주는 기법 중 하나
 enum AdultType {
     case adult
