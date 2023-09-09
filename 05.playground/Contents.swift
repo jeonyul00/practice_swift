@@ -1,7 +1,7 @@
 import UIKit
 
 // Numeric
- var myScore = 50
+var myScore = 50
 type(of: myScore) // Int
 
 var myNumber = 50.0
