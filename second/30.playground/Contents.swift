@@ -11,12 +11,19 @@ struct Score1 {
     }
 }
 
-var score1 = Score1(myScore: 0, yourScore: 0)
-score1.myScore = 100
-score1.presentScore()
+var score1 = Score1(myScore: 10, yourScore: 20)
+score1.myScore
+
+var scoreA = score1 // 값 새로운
+var scoreB = scoreA // 값 새로운
+
+score1.myScore = 11
+score1.myScore
+scoreB.myScore
 
 // 이러면 class랑 뭐가달라
 // 1. 초기값 세팅하는 과정 : struct는 init을 명시하지 않음(자동으로 제공함), init => 생성자역할인가
+// 2. struct는 값 타입, class는 참조타입
 
 class Score2 {
     var myScore:Int
@@ -33,6 +40,8 @@ class Score2 {
     }
 }
 
-var score2 = Score2(myScore: 0, yourScore: 0)
-score2.myScore = 1000
-score2.presentScore()
+var score2 = Score2(myScore: 10, yourScore: 20)
+var scoreAA = score2
+var scoreBB = scoreAA
+score2.myScore = 100
+scoreBB.myScore
