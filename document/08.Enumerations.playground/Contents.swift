@@ -67,10 +67,14 @@ enum CompassPoint2: String {
 let earthsOrder = Planet2.earth.rawValue
 let sunsetDirection = CompassPoint2.west.rawValue
 let possiblePlanet = Planet2(rawValue: 7)
-print(possiblePlanet) // nil
-let possiblePlanet2 = Planet2(rawValue: 2)
-print(possiblePlanet2) // Planet2.venus?
+if let possiblePlanet {// nil
+    print(possiblePlanet)
+}
 
+let possiblePlanet2 = Planet2(rawValue: 2)
+if let possiblePlanet2 {
+    print(possiblePlanet2) // Planet2.venus
+}
 // 재귀 열거형 => 이건 또 뭐야
 // 열거형 케이스에 하나 이상의 연관된 값으로 열거형의 다른 인스턴스를 가지고 있는 열거형입니다.
 // 열거형 케이스가 재귀적임을 나타내기 위해 케이스 작성 전에 indirect 를 작성하여 컴파일러에게 필요한 간접 (indirection) 계층을 삽입하도록 지시합니다.
