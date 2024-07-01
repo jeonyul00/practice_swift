@@ -28,4 +28,8 @@ Task {
 simpleWork()
 /*
  네, 정확하게 이해하셨습니다. Swift에서 비동기 함수(async 함수)를 호출하고 await 키워드를 사용할 때, 그 함수가 호출되는 부모 환경에 따라 달라집니다. 부모 환경이 동기(synchronous)일 때는 Task를 사용해야 하고, 부모 환경이 비동기(asynchronous)일 때는 그냥 사용할 수 있습니다.
+ 
+ 
+ 
+ 
  */
