@@ -11,10 +11,13 @@ class DetailViewController: UIViewController {
 
     @IBOutlet weak var nameLabel: UILabel!
     @IBOutlet weak var ageLabel: UILabel!
+    var detailName = ""
+    var detailAge = 0
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        self.nameLabel.text = detailName
+        self.ageLabel.text = detailAge.description
     }
         
 }
